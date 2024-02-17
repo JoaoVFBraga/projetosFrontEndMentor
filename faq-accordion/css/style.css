@@ -1,0 +1,156 @@
+/* CSS Reset */
+
+body, h1, dl, dt, dd {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Container */
+
+body {
+    background-color: rgb(233, 233, 233);
+    font-family: 'Montserrat';
+}
+
+.container {
+    max-width: 1000px;
+    background-color: rgb(253, 233, 255);
+    padding: 200px;
+    background-image: url(../img/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    border-radius: 10px;
+    margin: 100px auto 0 auto;
+    align-items: center;
+}
+
+/* FAQ */
+
+.faq {
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: grid;
+    margin: 0 auto;
+    padding: 30px;
+}
+.faqtitulo {
+    display: flex;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: rgb(37, 10, 65);
+}
+.faqtitulo::before {
+    content: '';
+    background-image: url(../img/icon-star.svg);
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    align-self: center;
+    margin-right: 20px;
+}
+.faq dl {
+    display: grid;
+}
+.faq dt {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(37, 10, 65);
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: auto 30px;
+    justify-content: space-between;
+    cursor: pointer;
+    word-break: break-word;
+}
+.faq dt::after {
+    content: '';
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/icon-plus.svg);
+    display: inline-block;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+.faq dt:hover {
+    color: rgb(143, 0, 209);
+}
+.faq dd {
+    color: #3d3d3d;
+    font-weight: 400;
+    display: none;
+    padding: 0 0 10px 0;
+    word-break: break-word;
+}
+
+/* Efeitos com JS */
+
+dd.ativo {
+    display: block;
+    animation: show .5s forwards;
+}
+
+dt.ativo::after {
+    background-image: url(../img/icon-minus.svg);
+}
+
+
+@keyframes show {
+    from {
+        opacity: 0;;
+        transform: translate3d(-10px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Responsivo */
+
+@media (max-width: 1050px) {
+    .faqtitulo {
+        font-size: 2.5rem;
+    }
+    .faq dt {
+        font-size: 1.1rem;
+    }
+    .faq dd {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 960px) {
+    .container {
+        padding: 100px;
+    }
+}
+
+@media (max-width: 780px) {
+    .container{
+        padding: 30px;
+    }
+    .faq {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 650px) {
+    .container{
+        padding: 30px;
+    }
+}
+
+@media (max-width: 350px) {
+    .faqtitulo {
+        font-size: 1.8rem;
+    }
+    .faq dt {
+        font-size: 0.8rem;
+    }
+    .faq dd {
+        font-size: 0.7rem;
+        color: black;
+    }
+}
