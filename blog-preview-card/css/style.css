@@ -1,0 +1,55 @@
+/* CSS Reset */
+p, h1, span, img {
+    margin: 0;
+    padding: 0;
+}
+/* Body */
+body {
+    background-color: #f4d04e;
+    font-family: 'Montserrat', arial, sans-serif;
+    display: flex;
+}
+
+/* Container */
+.container {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #000;
+    max-width: 350px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 5px 5px #000;
+    gap: 10px;
+    margin-top: 250px;
+}
+.card-img img {
+    border-radius: 15px;
+    width: 100%;
+}
+.span {
+    font-weight: bold;
+    background-color: #f4d04e;
+    padding: 3px 5px;
+    border-radius: 5px;
+    max-width: max-content;
+}
+.date {
+    font-weight: 500;
+}
+.card-title {
+    font-size: 1.5rem;
+}
+.publisher-profile img {
+    max-width: 40px;
+}
+.publisher-profile span {
+    font-weight: 700;
+}
+.publisher-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
