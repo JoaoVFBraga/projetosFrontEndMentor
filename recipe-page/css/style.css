@@ -1,0 +1,109 @@
+/* CSS Reset */
+h1, h2, h3, p, ul, ol, li, span {
+    margin: 0px;
+    padding: 0px;
+}
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+/* Body */
+body {
+    background-color: antiquewhite;
+    font-family: 'Outfit';
+    color: rgb(41, 41, 41);
+    line-height: 25px;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.178);
+}
+.title {
+    margin-bottom: 20px;
+    color: rgb(41, 41, 41);
+    line-height: 35px;
+}
+.title-p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+.preparation-div {
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.preparation-div h3 {
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 10px;
+}
+.preparation-div li::marker {
+    color: hsl(332, 51%, 32%);
+}
+.preparation-div ul {
+    list-style-position: inside;
+    margin-left: 10px;
+}
+.preparation-div span {
+    font-weight: 600;
+}
+.h2-title {
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.list-style {
+    list-style-position: inside;
+    padding: 0px 0px 20px 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.178);
+}
+.list-style li::marker {
+    color: hsl(14, 45%, 36%);
+}
+.instruction-ol span {
+    font-weight: 600;
+}
+.instruction-ol {
+    list-style-position: inside;
+    padding: 0px 0px 20px 20px;
+    list-style: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.178);
+}
+.instruction-ol li {
+    counter-increment: num-list;
+    margin-bottom: 5px;
+}
+.instruction-ol li::before {
+    content: counter(num-list) ". ";
+    font-weight: 600;
+    color: hsl(14, 45%, 36%);
+    margin-right: 10px;
+}
+.nutrition-ul {
+    list-style: none;
+    margin-top: 20px;
+}
+.nutrition-ul li {
+    display: flex;
+    justify-content: space-between;
+    max-width: 450px;
+    margin: 0 auto 10px auto;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.178);
+}
+.nutrition-ul li:last-child {
+    border-bottom: none;
+}
+.nutrition-ul li span {
+    color: hsl(14, 45%, 36%);
+    font-weight: 500;
+}
