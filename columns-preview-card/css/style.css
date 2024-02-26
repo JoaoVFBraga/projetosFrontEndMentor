@@ -1,0 +1,91 @@
+/* CSS Reset */
+h2, p, a, img {
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+}
+
+
+/* Body */
+body {
+    font-family: 'Lexend Deca';
+    line-height: 28px;
+    color: #fff;
+}
+
+/* Container */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 800px;
+    margin: 200px auto;
+}
+
+/* Section */
+.section-design {
+    padding: 40px;
+}
+.section-design img {
+    margin-bottom: 30px;
+}
+.section-title {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+.section-design p {
+    margin-bottom: 60px;
+}
+.btn {
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: 3px solid #fff;
+}
+
+/* Sedan */
+.sedan-div {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+}
+.sedan-div .btn {
+    color: hsl(31, 77%, 52%);
+}
+.sedan-div .btn:hover {
+    color: #fff;
+    background-color: hsl(31, 77%, 52%);
+}
+
+/* Suvs */
+.suvs-div {
+    background-color: hsl(184, 100%, 22%);
+}
+.suvs-div .btn {
+    color: hsl(184, 100%, 22%);
+}
+.suvs-div .btn:hover {
+    color: #fff;
+    background-color: hsl(184, 100%, 22%);
+}
+
+/* Luxury */
+.luxury-div {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+.luxury-div .btn {
+    color: hsl(179, 100%, 13%);
+}
+.luxury-div .btn:hover {
+    color: #fff;
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media (max-width:700px) {
+    .container {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin: 20px auto;
+    }
+}
