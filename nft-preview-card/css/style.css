@@ -1,0 +1,101 @@
+/* CSS Reset */
+h1, p, span {
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    /* display: block; */
+}
+
+/* Body */
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit';
+}
+
+/* Container */
+.container {
+    background-color: hsl(216, 50%, 16%);
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 150px auto;
+}
+.main-image {
+    width: 400px;
+    height: 400px;
+    background-image: url('../img/image-equilibrium.jpg');
+    background-size: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.main-image:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, 0.308);
+    border-radius: 10px;
+    background-image: url(../img/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.nft-name {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.nft-name:hover {
+    color: hsl(178, 100%, 50%);
+    transition: 0.5s;
+}
+.nft-description {
+    color: #bbbbbb;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.eth-and-days {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid hsl(215, 32%, 27%);
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+.eth-value {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+    font-size: 1.1rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 20px 1fr;
+}
+.days-value {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+    font-size: 1.1rem;
+}
+.author img {
+    max-width: 30px;
+    border: 1px solid hsl(0, 0%, 64%);
+    border-radius: 50%;
+}
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #bbbbbb;
+}
+.author span {
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.author span:hover {
+    color: hsl(178, 100%, 50%);
+    transition: 0.5s;
+}
