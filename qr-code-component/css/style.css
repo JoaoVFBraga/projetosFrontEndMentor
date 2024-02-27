@@ -1,0 +1,36 @@
+/* CSS Reset */
+p, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    background-color: hsl(219, 90%, 92%);
+    font-family: 'Outfit';
+}
+
+/* Container */
+.container {
+    margin: 0 auto;
+    background-color: #fff;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 150px;
+}
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(92, 92, 92);
+}
