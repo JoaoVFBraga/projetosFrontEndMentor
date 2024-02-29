@@ -1,0 +1,134 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+/* Body */
+body {
+    background-color: #ffffff;
+    display: flex;
+    font-family: 'Hanken Grotesk';
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+/* Container */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
+    border-radius: 20px;
+}
+/* Your result */
+.your-result {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.your-result-title {
+    color: #e7e7e7;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+.score-points {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.score span {
+    color: #bbbbbb;
+}
+.score {
+    background: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    border-radius: 50%;
+    align-self: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.great {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.great-p {
+    color: #e7e7e7;
+    font-size: 0.9rem;
+}
+/* Summary */
+.summary {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.summary-title {
+    color: rgb(24, 24, 24);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+.skills-points {
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr;
+    margin-bottom: 15px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+.skills-points p {
+    padding-left: 10px;
+    font-weight: 600;
+}
+.skills-img {
+    display: flex;
+}
+.points {
+    text-align: end;
+}
+.darker {
+    font-weight: 700;
+}
+.reaction {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.055);
+}
+.memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.055);
+}
+.verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.055);
+}
+.visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%, 0.055);
+    margin-bottom: 40px;
+}
+
+.btn {
+    margin: 0 auto;
+    background-color: #4f495e;
+    padding: 10px 60px;
+    border-radius: 20px;
+    color: #fff;                           
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
