@@ -1,0 +1,111 @@
+/* CSS reset */
+h1, p, ul, li, span {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+/* Body */
+body {
+    background: url('../img/bg-pattern-top.svg'), url('../img/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: top -40vh left, bottom -40vh right;
+    background-color: hsl(185, 75%, 39%);
+    background-size: 50vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh sans';
+}
+
+@media (max-width:1500px) {
+    body {
+        background-position: top -20vh left, bottom -20vh right;
+    }
+}
+@media (max-width:1100px) {
+    body {
+        background-position: top -10vh left, bottom -10vh right;
+    }
+}
+@media (max-width:850px) {
+    body {
+        background-position: top -10vh left, bottom -10vh right;
+        background-size: 50vh;
+    }
+}
+
+
+/* Container */
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/bg-pattern-card.svg');
+    background-position: start;
+    background-repeat: repeat-x;
+    width: 400px;
+}
+.img-div {
+    margin: 90px auto 30px;
+    border-radius: 50%;
+}
+.img-div img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+.name {
+    font-size: 1.3rem;
+    margin: 0 auto 10px;
+    color: hsla(0, 0%, 0%, 0.808);
+}
+.name span {
+    margin-left: 5px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 500;
+}
+.location {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 500;
+    border-bottom: 3px solid hsla(0, 0%, 59%, 0.199);
+    width: 100%;
+    text-align: center;
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.stats li:first-child::after {
+    content: 'Followers';
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: hsl(0, 0%, 59%);
+}
+.stats li:nth-child(2)::after {
+    content: 'Likes';
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: hsl(0, 0%, 59%);
+}
+.stats li:last-child::after {
+    content: 'Photos';
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: hsl(0, 0%, 59%);
+}
