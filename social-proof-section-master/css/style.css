@@ -1,0 +1,148 @@
+/* CSS Reset */
+h1, p, span {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Body */
+body {
+    background: url('../img/bg-pattern-top-desktop.svg'), url('../img/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'League Spartan';
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+}
+
+/* First-section */
+.first-section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.title-side {
+    padding: 20px;
+}
+.title {
+    font-size: 3rem;
+    max-width: 15ch;
+    margin-bottom: 30px;
+    color: hsl(300, 43%, 22%);
+}
+.description {
+    line-height: 20px;
+    font-size: 1.1rem;
+    max-width: 40ch;
+    color: hsla(300, 43%, 22%, 0.747);
+    font-weight: 500;
+}
+.class-side {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: end;
+}
+.class-div {
+    background-color: hsl(300, 24%, 96%);
+    padding: 15px 35px;
+    margin-bottom: 30px;
+    max-width: max-content;
+    border-radius: 5px;
+}
+.class-div img {
+    width: 5%;
+    margin-right: 5px;
+}
+.class-div span {
+    margin-left: 35px;
+    color:hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+.first-star {
+    margin-right: 80px;
+}
+.second-star {
+    margin-right: 40px;
+}
+
+/* Comments */
+.comments {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+.comment-container {
+    max-width: 300px;
+    height: 190px;
+    background-color: hsl(300, 43%, 22%);
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.comment-container img {
+    max-width: 15%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.comment-container p {
+    color: #ffffffdc;
+}
+.comment-header {
+    display: flex;
+    margin-bottom: 20px;
+}
+.comment-header span {
+    color: #fff;
+    font-weight: 500;
+    align-self: center;
+}
+.comment-header span::after {
+    content: 'Verified Buyer';
+    color: hsl(333, 80%, 67%);
+    display: block;
+    position: relative;
+    bottom: -5px;
+    font-weight: 400;
+}
+.second-comment {
+    margin-top: 20px;
+}
+.third-comment {
+    margin-top: 40px;
+}
+
+@media (max-width: 1050px) {
+    .first-section {
+        grid-template-columns: 1fr;
+    }
+    .title-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .class-side {
+        align-items: center;
+    }
+    .first-star {
+        margin-right: 0px;
+    }
+    .second-star {
+        margin-right: 0px;
+    }
+    .comments {
+        flex-direction: column;
+        align-items: center;
+    }
+    .third-comment {
+        margin-top: 20px;
+    }
+}
